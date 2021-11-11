@@ -43,6 +43,8 @@ namespace LoopStatements
             //    a += 2;
             //}
 
+            /*
+             * Prime Numbers
             Console.Write("Enter the number :");
             int maxlimit = int.Parse(Console.ReadLine());
 
@@ -63,8 +65,24 @@ namespace LoopStatements
                 {
                     Console.Write(i + " ");
                 }
-            }
+            }*/
 
+            //Fibnocchi SEries
+            Console.Write("Enter the max limit :");
+            int maxlimit = int.Parse(Console.ReadLine());
+
+            int firstnumber = 0, secondnumber = 1, sum = 0;
+            Console.Write($"{firstnumber} {secondnumber} ");
+            for(int i= 2;sum<maxlimit;i++)
+            {
+                sum = firstnumber + secondnumber;
+
+                if(sum < maxlimit)
+                    Console.Write(sum + " ");
+
+                firstnumber  = secondnumber;
+                secondnumber = sum;
+            }
         }
     }
 }
