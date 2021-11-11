@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapTraining", "CapTraining\CapTraining.csproj", "{B2B9EECB-B274-4F02-B2B9-7F26DE5E09FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2B9EECB-B274-4F02-B2B9-7F26DE5E09FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B9EECB-B274-4F02-B2B9-7F26DE5E09FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B9EECB-B274-4F02-B2B9-7F26DE5E09FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B9EECB-B274-4F02-B2B9-7F26DE5E09FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D00B7D85-0754-4ECC-9C9D-C02CC33365D9}
+	EndGlobalSection
+EndGlobal
