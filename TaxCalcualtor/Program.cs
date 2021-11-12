@@ -9,7 +9,9 @@ namespace TaxCalcualtor
             int totalCtc;
             float taxPercentage;
 
-            GetCtc(out totalCtc);
+            //GetCtc(out totalCtc);
+            totalCtc = GetCtc();
+
             CalculateTaxPercentage(out taxPercentage, totalCtc);
             CalculateAndDisplayTax(totalCtc, taxPercentage);
         }
@@ -18,6 +20,13 @@ namespace TaxCalcualtor
         {
             Console.Write("Enter your annual salary :");
             totalCtc = int.Parse(Console.ReadLine());
+        }
+
+        static int GetCtc()
+        {
+            Console.Write("Enter your annual salary :");
+            int totalCtc = int.Parse(Console.ReadLine());
+            return totalCtc;
         }
 
         static void CalculateTaxPercentage(out float taxPercentage,int totalCtc)
