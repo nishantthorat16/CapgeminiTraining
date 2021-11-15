@@ -22,7 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefAndOut", "RefAndOut\RefA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxCalcualtor", "TaxCalcualtor\TaxCalcualtor.csproj", "{870EFFB8-6FFC-4452-9496-6C2425537421}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{38ACD5C7-9DA6-4483-9B55-9BCEB031361E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{38ACD5C7-9DA6-4483-9B55-9BCEB031361E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxingandUnboxing", "BoxingandUnboxing\BoxingandUnboxing.csproj", "{D1711129-ECED-4262-960D-A132DC2CE5B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{38ACD5C7-9DA6-4483-9B55-9BCEB031361E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38ACD5C7-9DA6-4483-9B55-9BCEB031361E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38ACD5C7-9DA6-4483-9B55-9BCEB031361E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1711129-ECED-4262-960D-A132DC2CE5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1711129-ECED-4262-960D-A132DC2CE5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1711129-ECED-4262-960D-A132DC2CE5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1711129-ECED-4262-960D-A132DC2CE5B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
