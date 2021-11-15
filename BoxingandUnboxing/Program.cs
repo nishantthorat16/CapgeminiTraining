@@ -23,7 +23,7 @@ namespace BoxingandUnboxing
             object[,] marks2 = new object[2, 10];
 
             marks[0, 0] = "English";
-            marks[0, 1] = "50"; //Boxing
+            marks[0, 1] = "50";
 
             marks2[0, 0] = "English";
             marks2[0, 1] = 50; //Boxing
@@ -33,6 +33,8 @@ namespace BoxingandUnboxing
 
             int totalMarks = (int)marks2[0, 1] //UnBoxing
                            + (int)marks2[1,1]; //UnBoxing
+
+            Console.WriteLine(totalMarks);
         }
 
        
