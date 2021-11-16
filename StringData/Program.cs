@@ -89,7 +89,7 @@ namespace StringData
                     }
                 } 
                 
-                if(!isCounted)
+                if(isCounted == false)
                 {
                     distintWords[totalDistinctWords] = word;
                     totalDistinctWords++;
