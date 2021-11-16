@@ -32,6 +32,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringData", "StringData\St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableTypes", "NullableTypes\NullableTypes.csproj", "{335C24F5-9A5F-4E52-B4EA-35D67A902864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynamicdatatype", "dynamicdatatype\dynamicdatatype.csproj", "{313A0B46-865A-491B-8372-C7C160FFF46C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{335C24F5-9A5F-4E52-B4EA-35D67A902864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335C24F5-9A5F-4E52-B4EA-35D67A902864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{335C24F5-9A5F-4E52-B4EA-35D67A902864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313A0B46-865A-491B-8372-C7C160FFF46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313A0B46-865A-491B-8372-C7C160FFF46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313A0B46-865A-491B-8372-C7C160FFF46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313A0B46-865A-491B-8372-C7C160FFF46C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

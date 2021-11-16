@@ -40,6 +40,7 @@ namespace NullableTypes
             }
 
             //currentBalance = currentBalance.HasValue ? currentBalance.Value : int.Parse(Console.ReadLine());
+                             //Checkes if currentBalance is null ?? if null use the value
             currentBalance = currentBalance ?? int.Parse(Console.ReadLine());
                 
         }
