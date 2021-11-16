@@ -30,11 +30,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataConversion", "DataConve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringData", "StringData\StringData.csproj", "{188296E2-A9B9-49D5-AD46-20A2EF49164B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableTypes", "NullableTypes\NullableTypes.csproj", "{335C24F5-9A5F-4E52-B4EA-35D67A902864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableTypes", "NullableTypes\NullableTypes.csproj", "{335C24F5-9A5F-4E52-B4EA-35D67A902864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynamicdatatype", "dynamicdatatype\dynamicdatatype.csproj", "{313A0B46-865A-491B-8372-C7C160FFF46C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dynamicdatatype", "dynamicdatatype\dynamicdatatype.csproj", "{313A0B46-865A-491B-8372-C7C160FFF46C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebugAndTrace", "DebugAndTrace\DebugAndTrace.csproj", "{49C9C1CD-DC0D-46DA-A4D8-1F508D8493BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DebugAndTrace", "DebugAndTrace\DebugAndTrace.csproj", "{49C9C1CD-DC0D-46DA-A4D8-1F508D8493BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NugetUsage", "NugetUsage\NugetUsage.csproj", "{7F60BD1F-DDA1-4332-9260-A3CFC07CE8C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCalculator", "MyCalculator\MyCalculator.csproj", "{FF7676AA-85D1-472A-88F2-08E30B5E190B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCalcualtor", "UseCalcualtor\UseCalcualtor.csproj", "{929F8609-ED2E-4420-9797-531CFD165465}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,6 +104,18 @@ Global
 		{49C9C1CD-DC0D-46DA-A4D8-1F508D8493BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49C9C1CD-DC0D-46DA-A4D8-1F508D8493BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49C9C1CD-DC0D-46DA-A4D8-1F508D8493BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F60BD1F-DDA1-4332-9260-A3CFC07CE8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F60BD1F-DDA1-4332-9260-A3CFC07CE8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F60BD1F-DDA1-4332-9260-A3CFC07CE8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F60BD1F-DDA1-4332-9260-A3CFC07CE8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7676AA-85D1-472A-88F2-08E30B5E190B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7676AA-85D1-472A-88F2-08E30B5E190B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7676AA-85D1-472A-88F2-08E30B5E190B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7676AA-85D1-472A-88F2-08E30B5E190B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929F8609-ED2E-4420-9797-531CFD165465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929F8609-ED2E-4420-9797-531CFD165465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929F8609-ED2E-4420-9797-531CFD165465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929F8609-ED2E-4420-9797-531CFD165465}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
