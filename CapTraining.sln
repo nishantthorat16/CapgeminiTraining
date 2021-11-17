@@ -38,9 +38,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DebugAndTrace", "DebugAndTr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NugetUsage", "NugetUsage\NugetUsage.csproj", "{7F60BD1F-DDA1-4332-9260-A3CFC07CE8C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCalculator", "MyCalculator\MyCalculator.csproj", "{FF7676AA-85D1-472A-88F2-08E30B5E190B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCalculator", "MyCalculator\MyCalculator.csproj", "{FF7676AA-85D1-472A-88F2-08E30B5E190B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCalcualtor", "UseCalcualtor\UseCalcualtor.csproj", "{929F8609-ED2E-4420-9797-531CFD165465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCalcualtor", "UseCalcualtor\UseCalcualtor.csproj", "{929F8609-ED2E-4420-9797-531CFD165465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpression", "RegularExpression\RegularExpression.csproj", "{59087A9B-CF15-42D1-8B93-7006A3E5EC3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -116,6 +118,10 @@ Global
 		{929F8609-ED2E-4420-9797-531CFD165465}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929F8609-ED2E-4420-9797-531CFD165465}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929F8609-ED2E-4420-9797-531CFD165465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59087A9B-CF15-42D1-8B93-7006A3E5EC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59087A9B-CF15-42D1-8B93-7006A3E5EC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59087A9B-CF15-42D1-8B93-7006A3E5EC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59087A9B-CF15-42D1-8B93-7006A3E5EC3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
