@@ -19,9 +19,13 @@ namespace Inheritance
             pm.BasicPay = 900000;
             pm.ProjectBonus = 50000;
 
-            Console.WriteLine($"Salary of JSE {jse.CalculateSalary()}");
-            Console.WriteLine($"Salary of PM  {pm.CalculateSalary()}");
+            ///Console.WriteLine($"Salary of JSE {jse.CalculateSalary()}");
+            ///Console.WriteLine($"Salary of PM  {pm.CalculateSalary()}");
+            Console.WriteLine("JSE SALARY: \n");
+            jse.DisplaySalaryInfo();
 
+            Console.WriteLine("\n\nPROJECT MANAGER SALARY: \n");
+            pm.DisplaySalaryInfo();
         }
     }
 }

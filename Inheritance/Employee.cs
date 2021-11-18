@@ -50,6 +50,11 @@ namespace Inheritance
                                   (baseSalary * CalculateTax(baseSalary));
             return finalSalary;
         }
+
+        //Abstract method are those defined in the base class
+        //Which does not have a implementation
+        //All child classes are required to provide their on implementation
+        abstract public void DisplaySalaryInfo();
     }
 
     public  class JuniorSoftwareEngineer : Employee{
@@ -57,8 +62,20 @@ namespace Inheritance
         {
             Console.WriteLine("Constuctor of Junior Software Engineer");
         }
+
+        public override void DisplaySalaryInfo()
+        {
+            Console.WriteLine($"Base Salary : {BasicPay} \n" +
+                              $"Net After Tax : {CalculateSalary()}");
+        }
     }
-    public class SeniorSoftwareEngineer : Employee{}
+    public class SeniorSoftwareEngineer : Employee{
+        public override void DisplaySalaryInfo()
+        {
+            Console.WriteLine($"Base Salary : {BasicPay} \n" +
+                              $"Net After Tax : {CalculateSalary()}");
+        }
+    }
     public class ProjectManager : Employee
     {
         public float ProjectBonus { get; set; }
@@ -74,6 +91,24 @@ namespace Inheritance
             return projectManagerSalary;
             
         }
+
+        public override void DisplaySalaryInfo()
+        {
+            Console.WriteLine($"Base Salary   : {BasicPay} \n" +
+                              $"Project Bonus : {ProjectBonus} \n" +
+                              $"Net After Tax : {CalculateSalary()}");
+        }
+
+    }
+
+    //Sealed : Prevent the class from being inherited
+    sealed public class SeniorProjectManager :  ProjectManager
+    {
+
+    }
+
+    public class DeliveryHeadManager : ProjectManager
+    {
 
     }
 }
