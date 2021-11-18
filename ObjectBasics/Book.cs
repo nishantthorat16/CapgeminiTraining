@@ -18,6 +18,34 @@ namespace ObjectBasics
 
     class Book
     {
+        //Default Constructor or Empty Constructor
+        public Book()
+        {
+            Id = 10001;
+        }
+
+         //Parametarized Constructor
+         public Book(int id) {
+            Id = id;
+         }
+
+        //Methods Has Return Type, Construstors dont
+        //Methods can have any name, Constructors shold
+        //have class name
+        public Book(int id, string serialNumber)
+        {
+            Id              = id;
+            SerialNumber    = serialNumber;
+        }
+
+        //Destructors 
+        //No parameter
+        //Cannot be called directrly
+        ~Book()
+        {
+            Console.WriteLine("Bye bye book");
+        }
+
         //Auto implemented property are 
         //properties which does not have a explicit
         //backing field

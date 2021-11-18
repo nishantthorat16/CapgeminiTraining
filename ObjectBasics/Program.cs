@@ -46,7 +46,7 @@ namespace ObjectBasics
 
             for(int i=0;i<3;i++)
             {
-                Book book = new Book();
+                Book book = new Book(i, "abcdef" + i); // new Book(i);
 
                 Console.Write("Title : ");
                 book.Title = Console.ReadLine();
@@ -63,7 +63,7 @@ namespace ObjectBasics
 
             Console.WriteLine("\n\n------------------------------------------------------------\n\n");
             foreach (Book book in bookArray)
-                Console.WriteLine($"{book.Title}   {book.Author}   {book.Category}");
+                Console.WriteLine($" {book.Id} {book.SerialNumber} {book.Title}   {book.Author}   {book.Category}");
 
             Console.WriteLine("\n\n------------------------------------------------------------\n\n");
 
@@ -80,7 +80,7 @@ namespace ObjectBasics
                     foreach (var book in bookArray)
                     {
                         if (book.Category == category)
-                            Console.WriteLine($"{book.Title}   {book.Author}   {book.Category}");
+                            Console.WriteLine($"{book.Id} {book.Title}   {book.Author}   {book.Category}");
                     }
                 }
             }
