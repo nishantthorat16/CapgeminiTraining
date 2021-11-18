@@ -20,12 +20,14 @@ namespace Bank
 
             BasicAccount account1 = new BasicAccount();
             account1.Name = "Sreehari Aranghat";
+            account1.Email = "sreehariis@gmail.com";
             account1.AccountNumber = 10001;
             account1.CashDeposit(40000);
-
+            account1.WithDrawAmount(5000);
 
             PremiumAccount account2 = new PremiumAccount();
             account2.Name           = "Sreehari Aranghat";
+            account2.Email          = "sreehariis@gmail.com";
             account2.AccountNumber  = 10002;
             account2.CashDeposit(90000);
 
@@ -34,9 +36,14 @@ namespace Bank
              */
 
             var consolidatdAccount = account1 + account2;
-            var subtractAccount = account1 - account2;
             Console.WriteLine($"Consolicated Account = {consolidatdAccount.AccountBalance}");
 
+            if (account1 == account2)
+            {
+                Console.WriteLine("Both accouts are same");
+            }
+            else
+                Console.WriteLine("Both accounts are different");
         }
     }
 }

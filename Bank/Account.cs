@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank
 {
-    public abstract class Account
+    public abstract class Account 
     {
         public long AccountNumber { get; set; }
         public string Name { get; set; }
@@ -65,6 +65,20 @@ namespace Bank
             return account;
         }
 
+   
+        public static bool operator==(Account account1
+                                        ,Account account2)
+        {
+            return account1.Name == account2.Name
+                   && account1.Email == account2.Email;
+        }
+
+        public static bool operator !=(Account account1
+                                        , Account account2)
+        {
+            return account1.Name == account2.Name
+                   && account1.Email == account2.Email;
+        }
     }
 
     public sealed class BasicAccount : Account
