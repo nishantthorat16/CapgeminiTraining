@@ -54,6 +54,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAwsomeLibrary", "MyAwsome
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassMethods", "ClassMethods\ClassMethods.csproj", "{8166ABE2-4709-4D6D-8465-861324D099F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{64F2D190-F264-4C4A-8D08-F143A909B314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -144,6 +146,10 @@ Global
 		{8166ABE2-4709-4D6D-8465-861324D099F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8166ABE2-4709-4D6D-8465-861324D099F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8166ABE2-4709-4D6D-8465-861324D099F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F2D190-F264-4C4A-8D08-F143A909B314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F2D190-F264-4C4A-8D08-F143A909B314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F2D190-F264-4C4A-8D08-F143A909B314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F2D190-F264-4C4A-8D08-F143A909B314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,6 +176,7 @@ Global
 		{C167A86F-075C-4C4C-B55D-E229FAD1CE36} = {DCEEA303-14E3-4090-ACCF-77E986F358C4}
 		{E4C440A8-F151-4DA5-AA45-62850B10D66F} = {DCEEA303-14E3-4090-ACCF-77E986F358C4}
 		{8166ABE2-4709-4D6D-8465-861324D099F5} = {DCEEA303-14E3-4090-ACCF-77E986F358C4}
+		{64F2D190-F264-4C4A-8D08-F143A909B314} = {DCEEA303-14E3-4090-ACCF-77E986F358C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D00B7D85-0754-4ECC-9C9D-C02CC33365D9}
