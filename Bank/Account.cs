@@ -12,8 +12,11 @@ namespace Bank
         public string Name          { get; set; }
         public string Email         { get; set; }
        
+        public float AccountBalance { get; protected set; }
         public float IntrestRate    { get; protected set; }
-        public float MinumumBalace  { get; protected set; }
+        public float MinumumBalance  { get; protected set; }
+
+        public abstract void CashDeposit(int depositAmount);
     }
 
     public sealed class BasicAccount : Account
@@ -21,7 +24,15 @@ namespace Bank
         public BasicAccount()
         {
             IntrestRate     = 4.0F;
-            MinumumBalace   = 10000;
+            MinumumBalance = 10000;
+        }
+
+        public override void CashDeposit(int depositAmount)
+        {
+            if (depositAmount <= 50000)
+                AccountBalance += depositAmount;
+            else
+                Console.WriteLine("You can only deposit up to 50K");
         }
     }
 
@@ -30,7 +41,15 @@ namespace Bank
         public PremiumAccount()
         {
             IntrestRate     = 7.0F;
-            MinumumBalace   = 50000;
+            MinumumBalance = 50000;
+        }
+
+        public override void CashDeposit(int depositAmount)
+        {
+            if (depositAmount <= 100000)
+                AccountBalance += depositAmount;
+            else
+                Console.WriteLine("You can only deposit up to 1L");
         }
     }
 }
