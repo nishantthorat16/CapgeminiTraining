@@ -7,6 +7,7 @@ namespace GenericCollections
     {
         static void Main(string[] args)
         {
+            /*
             //Type saftey
             //No boxing and unboxing
             List<int> intList       = new List<int>();
@@ -35,7 +36,47 @@ namespace GenericCollections
 
 
             foreach (var city in cityName)
-                Console.WriteLine(city);
+                Console.WriteLine(city);*/
+
+            //Key has to be unique
+            /*
+            Dictionary<string, int> marks = new Dictionary<string, int>();
+
+            marks.Add("Maths"   , 70);
+            marks.Add("Science" , 80);
+            marks.Add("English" , 70);
+
+            //marks.Add("Maths", 83); //Throws an exception
+            marks["English"] = 84;
+
+            
+          
+            foreach (var data in marks)
+                Console.WriteLine($"{data.Key} {data.Value}");
+
+            SortedDictionary<string, int> marks = new SortedDictionary<string, int>();
+
+            marks.Add("Maths"  , 70);
+            marks.Add("Science", 80);
+            marks.Add("English", 70);
+
+            //marks.Add("Maths", 83); //Throws an exception
+            marks["English"] = 84;
+
+            foreach (var data in marks)
+                Console.WriteLine($"{data.Key} {data.Value}");*/
+
+            SortedDictionary<Student,int> marks = new SortedDictionary<Student,int>();
+
+            marks.Add(new Student(1010, "Sreehari"), 90);
+            marks.Add(new Student(1015, "Arun"), 80);
+            marks.Add(new Student(1002, "Bill"), 90);
+            marks.Add(new Student(1011, "Yash"), 100);
+
+            foreach (var s in marks)
+            {
+                Console.WriteLine($"{s.Key.Name} {s.Key.RollNumber}  - MARKS : {s.Value}");
+            }
         }
     }
 }
