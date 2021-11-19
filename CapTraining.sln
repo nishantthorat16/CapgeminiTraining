@@ -52,11 +52,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectBasics", "ObjectBasic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAwsomeLibrary", "MyAwsomeLibrary\MyAwsomeLibrary.csproj", "{E4C440A8-F151-4DA5-AA45-62850B10D66F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassMethods", "ClassMethods\ClassMethods.csproj", "{8166ABE2-4709-4D6D-8465-861324D099F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassMethods", "ClassMethods\ClassMethods.csproj", "{8166ABE2-4709-4D6D-8465-861324D099F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{64F2D190-F264-4C4A-8D08-F143A909B314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{64F2D190-F264-4C4A-8D08-F143A909B314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{99A3F87C-6A79-473D-827A-BB748F427D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank", "Bank\Bank.csproj", "{99A3F87C-6A79-473D-827A-BB748F427D0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

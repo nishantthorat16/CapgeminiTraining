@@ -6,6 +6,8 @@ namespace Bank
     {
         static void Main(string[] args)
         {
+            BasicAccount account = new BasicAccount();
+            
             /*
             BasicAccount account            = new BasicAccount();
             PremiumAccount premiumAccount   = new PremiumAccount();
@@ -22,6 +24,8 @@ namespace Bank
             account1.Name = "Sreehari Aranghat";
             account1.Email = "sreehariis@gmail.com";
             account1.AccountNumber = 10001;
+            account1.LoanRate = 10.0F;
+            account1.LoanTenure = 5;
             account1.CashDeposit(40000);
             account1.WithDrawAmount(5000);
 
