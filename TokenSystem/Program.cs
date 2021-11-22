@@ -8,7 +8,7 @@ namespace TokenSystem
         static void Main(string[] args)
         {
             Queue<Token> tokenQueue = new Queue<Token>();
-
+            List<Token> list = new List<Token>();
             string userChoice = "";
 
             do
