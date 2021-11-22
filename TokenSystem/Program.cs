@@ -15,14 +15,23 @@ namespace TokenSystem
             {
                 Token token = new Token();
 
+                
+
                 Console.Write("Name : ");
                 token.Name = Console.ReadLine();
 
                 Console.Write("Email : ");
                 token.Email = Console.ReadLine();
 
-                tokenQueue.Enqueue(token);
-                Console.WriteLine($"YOUR TOKEN NUMBER IS : {token.TokenNumer}");
+                if (!tokenQueue.Contains(token))
+                {
+                    tokenQueue.Enqueue(token);
+                    Console.WriteLine($"YOUR TOKEN NUMBER IS : {token.TokenNumer}");
+                }
+                else
+                {
+                    Console.WriteLine("You are already issued a token");
+                }
 
                 Console.WriteLine("----------------------------------------------------");
                 Console.Write("Do you want to continue  (Y/N) :");
