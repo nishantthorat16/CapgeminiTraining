@@ -42,11 +42,22 @@ namespace CustomExceptions
                 //3. throw; THROW THE EXCEPTION BY PRESERVING THE STACK TRACE
 
                 //throw nameException;
-                throw;
+                Exception excp = new Exception("Error occured while enteing data",nameException);
+                throw excp;
+                //throw;
             }
             catch(Exception exp)
             {
+              
                 Console.WriteLine(exp.Message);
+            }
+            catch
+            {
+                Console.WriteLine("Empty catch statement");
+            }
+            finally
+            {
+                Console.WriteLine("Finally Block");
             }
                
             

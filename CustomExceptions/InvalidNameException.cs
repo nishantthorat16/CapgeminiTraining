@@ -10,7 +10,8 @@ namespace CustomExceptions
     {
         public InvalidNameException() : base() { }
         public InvalidNameException(string message) : base(message) { }
-        public InvalidNameException(string message,Exception innerException)
+        public InvalidNameException(string message
+            ,Exception innerException)
             : base(message, innerException) { } 
     }
 }
