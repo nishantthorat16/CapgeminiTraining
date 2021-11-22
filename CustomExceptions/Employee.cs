@@ -17,7 +17,7 @@ namespace CustomExceptions
                 if (Regex.IsMatch(value, "^[A-Za-z]*$"))
                     name = value;
                 else
-                    throw new InvalidNameException("Invalid Name");
+                    throw new InvalidNameException();
             }
         }
 
