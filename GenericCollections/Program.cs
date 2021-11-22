@@ -65,7 +65,7 @@ namespace GenericCollections
 
             foreach (var data in marks)
                 Console.WriteLine($"{data.Key} {data.Value}");*/
-
+            /*
             SortedDictionary<Student,int> marks = new SortedDictionary<Student,int>();
 
             marks.Add(new Student(1010, "Sreehari"), 90);
@@ -76,7 +76,31 @@ namespace GenericCollections
             foreach (var s in marks)
             {
                 Console.WriteLine($"{s.Key.Name} {s.Key.RollNumber}  - MARKS : {s.Value}");
-            }
+            }*/
+
+            Stack<int> sampleStack = new Stack<int>();
+            sampleStack.Push(1);
+            sampleStack.Push(2);
+            sampleStack.Push(3);
+            sampleStack.Push(4);
+
+            Console.WriteLine("Last item in the stack : " + sampleStack.Pop());
+
+            foreach(var t in sampleStack)
+                Console.WriteLine(t);
+
+
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);   
+            queue.Enqueue(4);
+
+            Console.WriteLine("First in the Queue : " + queue.Dequeue());
+
+            foreach(var t in queue)
+                Console.WriteLine(t);
+
         }
     }
 }
