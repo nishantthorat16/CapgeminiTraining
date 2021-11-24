@@ -11,7 +11,7 @@ namespace ParallelLibrary
     {
         static void Main(string[] args)
         {
-            var numbers      = Enumerable.Range(0, 20000000); //Fill the numbers with 0 - 20,00,000;
+            var numbers      = Enumerable.Range(0, 2000000); //Fill the numbers with 0 - 20,00,000;
 
             Stopwatch stopWatchOne = Stopwatch.StartNew();
             var primeNumbers = GetPrimeNumberFromList(numbers.ToList());
@@ -42,7 +42,7 @@ namespace ParallelLibrary
 
         }
 
-            public static List<int> GetPrimeNumberFromList(List<int> numbers)
+        public static List<int> GetPrimeNumberFromList(List<int> numbers)
         {
             List<int> primeNumbers = new List<int>();
             foreach(var number in numbers)
