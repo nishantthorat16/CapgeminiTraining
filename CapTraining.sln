@@ -80,15 +80,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomExceptions", "CustomE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilenDirectoryOperations", "FilenDirectoryOperations\FilenDirectoryOperations.csproj", "{C1F4D17F-72DF-4EE6-B515-9B21FF7C465A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationSample", "SerializationSample\SerializationSample.csproj", "{E4B17463-4BD0-4F61-96EF-8109862EF0DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerializationSample", "SerializationSample\SerializationSample.csproj", "{E4B17463-4BD0-4F61-96EF-8109862EF0DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threading", "Threading\Threading.csproj", "{ED40B58C-B88B-429A-B038-E48112B99898}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threading", "Threading\Threading.csproj", "{ED40B58C-B88B-429A-B038-E48112B99898}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadLock", "ThreadLock\ThreadLock.csproj", "{27BE448A-367D-4BC5-A5C7-BB56C12C4AFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadLock", "ThreadLock\ThreadLock.csproj", "{27BE448A-367D-4BC5-A5C7-BB56C12C4AFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelLibrary", "ParallelLibrary\ParallelLibrary.csproj", "{01CEBBFC-E023-4566-940A-F59B51402FE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelLibrary", "ParallelLibrary\ParallelLibrary.csproj", "{01CEBBFC-E023-4566-940A-F59B51402FE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFunction", "AsyncFunction\AsyncFunction.csproj", "{B53C3F38-2E60-4802-ADF9-5D26CF7EE332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncFunction", "AsyncFunction\AsyncFunction.csproj", "{B53C3F38-2E60-4802-ADF9-5D26CF7EE332}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Net Core Basics", ".Net Core Basics", "{2F8404A8-E719-4194-B337-0E5148D1A42E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstMVCApp", "MyFirstMVCApp\MyFirstMVCApp.csproj", "{EE022E66-5907-4447-8793-4D452873A71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C7232D43-1E58-428F-9ED4-A095F8080471}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -248,6 +254,14 @@ Global
 		{B53C3F38-2E60-4802-ADF9-5D26CF7EE332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B53C3F38-2E60-4802-ADF9-5D26CF7EE332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B53C3F38-2E60-4802-ADF9-5D26CF7EE332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE022E66-5907-4447-8793-4D452873A71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE022E66-5907-4447-8793-4D452873A71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE022E66-5907-4447-8793-4D452873A71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE022E66-5907-4447-8793-4D452873A71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7232D43-1E58-428F-9ED4-A095F8080471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7232D43-1E58-428F-9ED4-A095F8080471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7232D43-1E58-428F-9ED4-A095F8080471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7232D43-1E58-428F-9ED4-A095F8080471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -291,6 +305,8 @@ Global
 		{27BE448A-367D-4BC5-A5C7-BB56C12C4AFD} = {41C8BD46-E83E-4892-B0CB-9381544E6159}
 		{01CEBBFC-E023-4566-940A-F59B51402FE8} = {41C8BD46-E83E-4892-B0CB-9381544E6159}
 		{B53C3F38-2E60-4802-ADF9-5D26CF7EE332} = {41C8BD46-E83E-4892-B0CB-9381544E6159}
+		{EE022E66-5907-4447-8793-4D452873A71C} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
+		{C7232D43-1E58-428F-9ED4-A095F8080471} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D00B7D85-0754-4ECC-9C9D-C02CC33365D9}
