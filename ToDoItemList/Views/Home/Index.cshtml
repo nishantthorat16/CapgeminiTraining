@@ -6,3 +6,14 @@
     placeholder="When you plan to compete" />
     <button type="submit">Add to my list</button>
 </form>
+
+@if (ViewBag.TodoItems != null)
+{
+    <h1>Your To Do Items</h1>
+    <ul>
+        @foreach (var todoItem in ViewBag.TodoItems)
+        {
+           <li> @todoItem.Title - @todoItem.CompletedByWhen</li>
+        }
+    </ul>
+}
