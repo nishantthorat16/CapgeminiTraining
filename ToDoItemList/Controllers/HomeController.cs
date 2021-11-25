@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
-using ToDoItemList.Model;
+using TodoItemsLibrary;
 
 namespace ToDoItemList.Controllers
 {
@@ -8,7 +9,6 @@ namespace ToDoItemList.Controllers
     public class HomeController 
         : Controller
     {
-        static List<TodoItem> todoItems = new List<TodoItem>();
 
         [HttpGet]
         public IActionResult Index()
@@ -20,7 +20,18 @@ namespace ToDoItemList.Controllers
         public IActionResult 
             Index(TodoItem todoItem)
         {
-            todoItems.Add(todoItem);
+            ToDoListService service = new ToDoListService();
+
+            try
+            {
+                service.Add(todoItem);
+            }
+            catch(Exception excp)
+            {
+                ViewBag.Error = excp.Message; ;
+            }
+
+            var todoItems = service.GetTodoItems();
 
             ViewBag.TodoItems = todoItems;
 
