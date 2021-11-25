@@ -38,6 +38,7 @@ namespace Interfaces
             player.Play(fileName);
         }
 
+        //Dependency Container
         static IVideoPlayer GetPlayer(string name)
         {
             IVideoPlayer player = null;

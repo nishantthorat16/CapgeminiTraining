@@ -9,10 +9,22 @@ namespace ToDoItemList.Controllers
     public class HomeController 
         : Controller
     {
+        ITodoItemService service;
+
+        //Dependency Injection
+        //Inversion of Control - The process of coding against a interface insted of a class
+        public HomeController(ITodoItemService todoItemService)
+        {
+            service = todoItemService; 
+            //new ToDoItemFileService(); 
+            ///new ToDoListService();
+        }
 
         [HttpGet]
         public IActionResult Index()
         {
+            var todoItems = service.GetTodoItems();
+            ViewBag.TodoItems = todoItems;
             return View();
         }
 
@@ -20,8 +32,6 @@ namespace ToDoItemList.Controllers
         public IActionResult 
             Index(TodoItem todoItem)
         {
-            ToDoListService service = new ToDoListService();
-
             try
             {
                 service.Add(todoItem);

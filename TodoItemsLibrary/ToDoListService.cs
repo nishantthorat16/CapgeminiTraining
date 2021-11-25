@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace TodoItemsLibrary
 {
-    public interface ITodoItemService
-    {
-        void Add(TodoItem item);
-        List<TodoItem> GetTodoItems();
-    }
+    
 
 
     public class ToDoListService : ITodoItemService
