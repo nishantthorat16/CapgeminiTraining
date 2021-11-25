@@ -1,1 +1,19 @@
-﻿<h1>Hello MVC !!!!</h1>
+﻿
+<h1>Hello MVC !!!!</h1>
+
+<form action="/" method="post">
+    <input type="text" name="myname" 
+        placeholder="Tell me your name" />
+   <input type="text" name="age" 
+        placeholder="And your age" />
+    <button type="submit">Say Hello</button>
+</form>
+
+@if(ViewBag.Message != null)
+{
+    <h2 style="color:blue;
+            font-size:30px;
+           font-family:Arial">
+        @ViewBag.Message</h2>
+}
+
