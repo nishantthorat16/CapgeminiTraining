@@ -25,5 +25,19 @@ namespace MySimpleLibrary.Controllers
             ViewBag.Books = books;
             return View();
         }
+
+        [HttpGet("/addnewbook")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult AddNewBook()
+        {
+            return View();
+        }
+
+        [HttpPost("/addnewbook")]
+        public IActionResult AddNewBook(string bookname)
+        {
+            books.Add(bookname);
+            return View();
+        }
     }
 }
