@@ -1,0 +1,13 @@
+﻿<h1>My Library Home</h1>
+
+<h3>Books Available</h3>
+
+@if(ViewBag.Books != null)
+{
+    <ul>
+        @foreach(var book in ViewBag.Books)
+        {
+            <li>@book</li>
+        }
+    </ul>
+}

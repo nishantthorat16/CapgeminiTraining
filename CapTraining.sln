@@ -92,13 +92,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncFunction", "AsyncFunct
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Net Core Basics", ".Net Core Basics", "{2F8404A8-E719-4194-B337-0E5148D1A42E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstMVCApp", "MyFirstMVCApp\MyFirstMVCApp.csproj", "{EE022E66-5907-4447-8793-4D452873A71C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstMVCApp", "MyFirstMVCApp\MyFirstMVCApp.csproj", "{EE022E66-5907-4447-8793-4D452873A71C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C7232D43-1E58-428F-9ED4-A095F8080471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C7232D43-1E58-428F-9ED4-A095F8080471}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoItemList", "ToDoItemList\ToDoItemList.csproj", "{DBA62EA9-4BB1-4D77-A5E1-022C37844CED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoItemList", "ToDoItemList\ToDoItemList.csproj", "{DBA62EA9-4BB1-4D77-A5E1-022C37844CED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoItemsLibrary", "TodoItemsLibrary\TodoItemsLibrary.csproj", "{86610A83-77EC-4C31-B8DE-B7F908314D67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoItemsLibrary", "TodoItemsLibrary\TodoItemsLibrary.csproj", "{86610A83-77EC-4C31-B8DE-B7F908314D67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySimpleLibrary", "MySimpleLibrary\MySimpleLibrary.csproj", "{199D0844-6B8E-43AD-9EC9-5F99EF7EA633}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -274,6 +276,10 @@ Global
 		{86610A83-77EC-4C31-B8DE-B7F908314D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86610A83-77EC-4C31-B8DE-B7F908314D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86610A83-77EC-4C31-B8DE-B7F908314D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199D0844-6B8E-43AD-9EC9-5F99EF7EA633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199D0844-6B8E-43AD-9EC9-5F99EF7EA633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199D0844-6B8E-43AD-9EC9-5F99EF7EA633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199D0844-6B8E-43AD-9EC9-5F99EF7EA633}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -321,6 +327,7 @@ Global
 		{C7232D43-1E58-428F-9ED4-A095F8080471} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
 		{DBA62EA9-4BB1-4D77-A5E1-022C37844CED} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
 		{86610A83-77EC-4C31-B8DE-B7F908314D67} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
+		{199D0844-6B8E-43AD-9EC9-5F99EF7EA633} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D00B7D85-0754-4ECC-9C9D-C02CC33365D9}
