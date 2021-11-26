@@ -1,6 +1,9 @@
 ﻿<h1>My Library Home</h1>
 
-<a href="/addnewbook">Add New Book</a>
+@if (User.IsInRole("Admin"))
+{
+    <a href="/addnewbook">Add New Book</a>
+}
 
 <h3>Books Available</h3>
 
