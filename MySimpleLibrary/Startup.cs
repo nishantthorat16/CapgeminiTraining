@@ -31,6 +31,8 @@ namespace MySimpleLibrary
                 app.UseDeveloperExceptionPage();
             }
 
+            //Middlewares
+            app.UseStaticFiles();
             app.UseAuthentication();
             app.UseRouting();
             app.UseAuthorization();
