@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace MySimpleLibrary.Controllers
 {
@@ -15,11 +19,11 @@ namespace MySimpleLibrary.Controllers
         public IActionResult Index(){
             return View();
         }
-
         [HttpPost]
-        public IActionResult Index(
+        public async Task<IActionResult> Index(
             string username,
             string password) {
+
             User loggedInUser = null;
             foreach(var user in users){
                 if(user.UserName == username && password == user.Password){
@@ -28,6 +32,16 @@ namespace MySimpleLibrary.Controllers
                 }
             }
             if(loggedInUser != null){
+                var claims = new[]
+                {
+                    new Claim(ClaimTypes.Name,loggedInUser.UserName),
+                    new Claim(ClaimTypes.Role,loggedInUser.Role),
+                };
+
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+
+                Response.Redirect("/");
 
             }
             else{
