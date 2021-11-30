@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,22 @@ namespace CustomMiddleWare.Controllers
     [Route("/")]
     public class HomeController : Controller
     {
+        IConfiguration config;
+
+        public HomeController(IConfiguration config)
+        {
+            this.config = config;
+        }
+
         public IActionResult Index()
         {
+            var clientName = config.GetValue<string>("ClientInformation:Name");
+            var dbInfo = config.GetValue<string>("ClientInformation:DatabaseServerInfo");
+
+            ViewBag.ClientName = clientName;
+            ViewBag.DbInfo = dbInfo;
+
+
             return View();
         }
 
