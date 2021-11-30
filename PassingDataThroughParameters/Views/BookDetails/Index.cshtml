@@ -1,0 +1,9 @@
+﻿<h1>Book Details</h1>
+
+@if (ViewBag.Book != null)
+{
+    <div><img src="~/@ViewBag.Book.BookCover" width="200"/> </div>
+    <div>Book Id = @ViewBag.Book.Id</div>
+    <div>Title   = @ViewBag.Book.Title</div>
+    <div>Author  = @ViewBag.Book.Author</div>
+}
