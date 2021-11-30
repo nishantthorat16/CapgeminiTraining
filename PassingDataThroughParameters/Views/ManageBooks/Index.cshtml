@@ -1,1 +1,24 @@
-﻿<h1></h1>
+﻿@model PassingDataThroughParameters.Book
+<h1>Add New Book</h1>
+
+<form action="/managebooks" method="post">
+    <label>Book Id</label>
+    @Html.TextBoxFor(model => model.Id)
+    @Html.ValidationMessageFor(model => model.Id, "", new { @style = "color:red" })<br /><br />
+
+
+    <label>Title</label>
+    @Html.TextBoxFor(model => model.Title)
+    @Html.ValidationMessageFor(model => model.Title, "", new { @style = "color:red" })<br /><br />
+
+    <label>Author</label>
+    @Html.TextBoxFor(model => model.Author)
+    @Html.ValidationMessageFor(model => model.Author, "", new { @style = "color:red" })<br /><br />
+
+    <label>Cover Photo</label>
+    @Html.TextBoxFor(model => model.BookCover)
+    @Html.ValidationMessageFor(model => model.BookCover, "", new { @style = "color:red" })
+    <br /><br />
+
+    <button type="submit">Save Book</button>
+</form>

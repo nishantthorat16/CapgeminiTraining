@@ -9,8 +9,20 @@ namespace PassingDataThroughParameters.Controllers
     [Route("/managebooks")]
     public class ManageBooksController : Controller
     {
+        [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(Book book)
+        {
+            if(ModelState.IsValid)
+            {
+                //Add the book the library
+            }
+
             return View();
         }
     }
