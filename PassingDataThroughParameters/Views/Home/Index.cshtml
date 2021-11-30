@@ -1,0 +1,24 @@
+﻿<h1>My Library Home</h1>
+
+@if(ViewBag.Books != null)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Book Id</th>
+                <th>Title </th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var book in ViewBag.Books)
+                {
+                    <tr>
+                        <td>@book.Id</td>
+                        <td>@book.Title</td>
+                        <td>@book.Author</td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+}

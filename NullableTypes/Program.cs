@@ -23,6 +23,10 @@ namespace NullableTypes
             marks[0] = 54;
             marks[1] = 78;
 
+            var data = 70;
+            var data2 = "Test data";
+            var data3 = true;
+
             foreach (var mark in marks)
             {
                 if (mark.HasValue)
