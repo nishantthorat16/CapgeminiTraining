@@ -61,5 +61,10 @@ namespace PassingDataThroughParameters
             }
             return bookByAuthor;
         }
+
+        public void AddBook(Book book)
+        {
+            books.Add(book);
+        }
     }
 }

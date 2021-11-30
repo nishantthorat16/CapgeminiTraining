@@ -9,6 +9,8 @@ namespace PassingDataThroughParameters.Controllers
     [Route("/managebooks")]
     public class ManageBooksController : Controller
     {
+        Library library = new Library();
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -20,7 +22,9 @@ namespace PassingDataThroughParameters.Controllers
         {
             if(ModelState.IsValid)
             {
+                library.AddBook(book);
                 //Add the book the library
+                Response.Redirect("/");
             }
 
             return View();
