@@ -11,10 +11,13 @@ namespace PassingDataThroughParameters
         [Required]
         public int Id           { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Title is mandatory")]
+        [StringLength(20, MinimumLength = 3, ErrorMessage = "Book Title has to be 3-20 charts")]
         public string Title     { get; set; }
 
         [Required]
+        [StringLength(20, MinimumLength = 3, ErrorMessage = "Author name has to be 3-20 charts")]
+        [RegularExpression("^[a-zA-Z ]*$",ErrorMessage = "Author name has to be only alphabets")]
         public string Author    { get; set; }
 
         [Required]
