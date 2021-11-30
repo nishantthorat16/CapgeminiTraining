@@ -39,5 +39,19 @@ namespace PassingDataThroughParameters
             }
             return book;
         }
+
+        public List<Book> FindByAuthor(string author)
+        {
+            List<Book> bookByAuthor = new List<Book>();
+            foreach(var book in books)
+            {
+                if(book.Author.Equals(author,StringComparison.OrdinalIgnoreCase))
+                {
+                    bookByAuthor.Add(book);
+                    
+                }
+            }
+            return bookByAuthor;
+        }
     }
 }

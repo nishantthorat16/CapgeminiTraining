@@ -2,8 +2,40 @@
 
 @if (ViewBag.Book != null)
 {
-    <div><img src="~/@ViewBag.Book.BookCover" width="200"/> </div>
+    <div><img src="~/@ViewBag.Book.BookCover" width="200" /> </div>
     <div>Book Id = @ViewBag.Book.Id</div>
     <div>Title   = @ViewBag.Book.Title</div>
     <div>Author  = @ViewBag.Book.Author</div>
+}
+
+@if (ViewBag.BooksByAuthor != null && ViewBag.BooksByAuthor.Count > 0)
+{
+    <h1>Other Books Written By Author</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Book Id</th>
+                <th>Title </th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in ViewBag.BooksByAuthor)
+            {
+                <tr>
+                    <td>
+                        <img src="~/@book.BookCover" width="100" />
+                    </td>
+                    <td>@book.Id</td>
+                    <td>
+                        <a href="~/bookdetails/@book.Id/@book.Author">
+                            @book.Title
+                        </a>
+                    </td>
+                    <td>@book.Author</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }

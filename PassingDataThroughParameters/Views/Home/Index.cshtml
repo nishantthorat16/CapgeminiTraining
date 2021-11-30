@@ -1,4 +1,5 @@
 ﻿<h1>My Library Home</h1>
+<a href="~/managebooks">Add Book</a>
 
 @if(ViewBag.Books != null)
 {
@@ -20,7 +21,7 @@
                         </td>
                         <td>@book.Id</td>
                         <td>
-                            <a href="~/bookdetails/@book.Id">
+                            <a href="~/bookdetails/@book.Id/@book.Author">
                                 @book.Title
                             </a>
                         </td>
