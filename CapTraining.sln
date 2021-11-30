@@ -106,6 +106,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtentionMethods", "Extenti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingDataThroughParameters", "PassingDataThroughParameters\PassingDataThroughParameters.csproj", "{E00E5753-5800-4B2B-B663-F052B06E0771}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomMiddleWare", "CustomMiddleWare\CustomMiddleWare.csproj", "{4A8E6BEB-EC8C-4DCB-85DF-4E6C4011E384}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -292,6 +294,10 @@ Global
 		{E00E5753-5800-4B2B-B663-F052B06E0771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E00E5753-5800-4B2B-B663-F052B06E0771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E00E5753-5800-4B2B-B663-F052B06E0771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8E6BEB-EC8C-4DCB-85DF-4E6C4011E384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8E6BEB-EC8C-4DCB-85DF-4E6C4011E384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8E6BEB-EC8C-4DCB-85DF-4E6C4011E384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8E6BEB-EC8C-4DCB-85DF-4E6C4011E384}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -342,6 +348,7 @@ Global
 		{199D0844-6B8E-43AD-9EC9-5F99EF7EA633} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
 		{7220B556-92B8-4380-8D05-4B6EE589F5F9} = {41C8BD46-E83E-4892-B0CB-9381544E6159}
 		{E00E5753-5800-4B2B-B663-F052B06E0771} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
+		{4A8E6BEB-EC8C-4DCB-85DF-4E6C4011E384} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D00B7D85-0754-4ECC-9C9D-C02CC33365D9}
