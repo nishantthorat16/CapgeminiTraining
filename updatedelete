@@ -1,0 +1,19 @@
+--CRUD operations
+--Create Read Update Delete
+select * from students
+
+update students
+set course = 'BSC'
+,email = 'sreehariis@gmail.com'
+where email = 'sreehariis@gmailcom'
+
+update students
+set course = 'B.TECH'
+where age < 30
+
+update students
+set firstname = null
+where id = 1
+
+delete from students
+where id = 1
