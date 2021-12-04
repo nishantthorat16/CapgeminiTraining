@@ -114,6 +114,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqIntro", "LinqIntro\Linq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqGroups", "LinqGroups\LinqGroups.csproj", "{B742BEAD-79B8-49AF-91F5-814CC4CEA01D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFramework", "EntityFramework", "{F0FE5CE5-3372-4463-BB48-E8BAD60BD4CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreBasics", "EfCoreBasics\EfCoreBasics.csproj", "{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -312,6 +316,10 @@ Global
 		{B742BEAD-79B8-49AF-91F5-814CC4CEA01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B742BEAD-79B8-49AF-91F5-814CC4CEA01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B742BEAD-79B8-49AF-91F5-814CC4CEA01D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -365,6 +373,7 @@ Global
 		{4A8E6BEB-EC8C-4DCB-85DF-4E6C4011E384} = {2F8404A8-E719-4194-B337-0E5148D1A42E}
 		{1176999A-9199-44DF-BBC3-8B1A22EEDABC} = {CD21050A-0D9C-42BF-8FD9-C99747B95504}
 		{B742BEAD-79B8-49AF-91F5-814CC4CEA01D} = {CD21050A-0D9C-42BF-8FD9-C99747B95504}
+		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8} = {F0FE5CE5-3372-4463-BB48-E8BAD60BD4CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D00B7D85-0754-4ECC-9C9D-C02CC33365D9}
