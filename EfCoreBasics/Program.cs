@@ -6,7 +6,22 @@ namespace EfCoreBasics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Customer customer = new Customer();
+            //customer.Email = "sreehariis@gmail.com";
+            //customer.Name = "Sreehari Aranghat";
+
+            //using(OrderContext dbContext = new OrderContext())
+            //{
+            //    dbContext.Customers.Add(customer);
+            //    dbContext.SaveChanges();
+            //}
+
+
+            using (OrderContext dbContext = new OrderContext())
+            {
+                foreach (var customer in dbContext.Customers)
+                    Console.WriteLine($"{customer.CustomerId} {customer.Name} {customer.Email}");
+            }
         }
     }
 }
