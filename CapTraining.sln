@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{0B5B46C9-A76D-4D91-A1DC-C48B9E9029E3}"
 EndProject
@@ -110,13 +110,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomMiddleWare", "CustomM
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linq", "Linq", "{CD21050A-0D9C-42BF-8FD9-C99747B95504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqIntro", "LinqIntro\LinqIntro.csproj", "{1176999A-9199-44DF-BBC3-8B1A22EEDABC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqIntro", "LinqIntro\LinqIntro.csproj", "{1176999A-9199-44DF-BBC3-8B1A22EEDABC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqGroups", "LinqGroups\LinqGroups.csproj", "{B742BEAD-79B8-49AF-91F5-814CC4CEA01D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqGroups", "LinqGroups\LinqGroups.csproj", "{B742BEAD-79B8-49AF-91F5-814CC4CEA01D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFramework", "EntityFramework", "{F0FE5CE5-3372-4463-BB48-E8BAD60BD4CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreBasics", "EfCoreBasics\EfCoreBasics.csproj", "{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreBasics", "EfCoreBasics\EfCoreBasics.csproj", "{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateProject", "TemplateProject", "{6CC264B4-A08A-41E6-8E7E-0784E9A9F7B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABCLibrary", "ABCLibrary\ABCLibrary.csproj", "{625ECB80-1B6D-48CA-8193-513990853AD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -320,6 +324,10 @@ Global
 		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625ECB80-1B6D-48CA-8193-513990853AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625ECB80-1B6D-48CA-8193-513990853AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625ECB80-1B6D-48CA-8193-513990853AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625ECB80-1B6D-48CA-8193-513990853AD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -374,6 +382,7 @@ Global
 		{1176999A-9199-44DF-BBC3-8B1A22EEDABC} = {CD21050A-0D9C-42BF-8FD9-C99747B95504}
 		{B742BEAD-79B8-49AF-91F5-814CC4CEA01D} = {CD21050A-0D9C-42BF-8FD9-C99747B95504}
 		{28371D29-4B9F-4F70-B01A-9FDF6863CEA8} = {F0FE5CE5-3372-4463-BB48-E8BAD60BD4CE}
+		{625ECB80-1B6D-48CA-8193-513990853AD6} = {6CC264B4-A08A-41E6-8E7E-0784E9A9F7B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D00B7D85-0754-4ECC-9C9D-C02CC33365D9}

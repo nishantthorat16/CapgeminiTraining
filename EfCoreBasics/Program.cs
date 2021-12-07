@@ -60,16 +60,26 @@ namespace EfCoreBasics
             context.Orders.Add(order);
             context.SaveChanges();*/
 
-            var orders = context.Orders
-                                .Include(d => d.Product)
-                                .Include(d => d.Customer);
+            //var orders = context.Orders
+            //                    .Include(d => d.Product)
+            //                    .Include(d => d.Customer);
 
-            foreach(var order in orders)
-            {
+            //foreach(var order in orders)
+            //{
                 
-                Console.WriteLine($"{order.OrderId} {order.Product.Name} {order.Customer.Name}  {order.OrderStatus}");
-            }
+            //    Console.WriteLine($"{order.OrderId} {order.Product.Name} {order.Customer.Name}  {order.OrderStatus}");
+            //}
 
+            //var customerOrders = context.Orders.Where(d => d.Customer.CustomerId == 2);
+            //foreach(var order in customerOrders)
+            //{
+            //    order.OrderStatus = OrderStatus.DELIVERED;
+            //    context.Orders.Update(order);
+            //}
+
+            //context.SaveChanges();
+
+            context.Database.ExecuteSqlRaw("update orders set orderstatus = 4 where customerid = 2");
 
         }
     }
