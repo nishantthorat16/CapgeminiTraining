@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 
 namespace EfCoreBasics
@@ -45,7 +46,7 @@ namespace EfCoreBasics
             {
                 context.Products.Remove(productToDelete);
                 context.SaveChanges();
-            }*/
+            }
 
             Customer customer = context.Customers.FirstOrDefault(d => d.Email == "sreehariis@gmail.com");
             Product product   = context.Products.FirstOrDefault(d => d.Name == "Coffee");
@@ -57,7 +58,19 @@ namespace EfCoreBasics
             order.OrderStatus = OrderStatus.PENDING;
            
             context.Orders.Add(order);
-            context.SaveChanges();
+            context.SaveChanges();*/
+
+            var orders = context.Orders
+                                .Include(d => d.Product)
+                                .Include(d => d.Customer);
+
+            foreach(var order in orders)
+            {
+                
+                Console.WriteLine($"{order.OrderId} {order.Product.Name} {order.Customer.Name}  {order.OrderStatus}");
+            }
+
+
         }
     }
 }
