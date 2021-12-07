@@ -6,22 +6,23 @@ namespace EfCoreBasics
     {
         static void Main(string[] args)
         {
-            //Customer customer = new Customer();
-            //customer.Email = "sreehariis@gmail.com";
-            //customer.Name = "Sreehari Aranghat";
+            Customer c1 = new Customer("Sree", "sreehariis@gmail.com");
+            Customer c2 = new Customer("Bill", "bill@gmail.com");
+            Customer c3 = new Customer("Mark", "mark@gmail.com");
 
-            //using(OrderContext dbContext = new OrderContext())
-            //{
-            //    dbContext.Customers.Add(customer);
-            //    dbContext.SaveChanges();
-            //}
+            Product p1 = new Product("Coffee", 100);
+            Product p2 = new Product("Tea", 40);
+            Product p3 = new Product("Sugar", 50);
+            Product p4 = new Product("Washing Powder", 20);
 
+            OrderContext context = new OrderContext();
+            context.Customers.Add(c1);
+            context.Customers.Add(c2);
+            context.Customers.Add(c3);
 
-            using (OrderContext dbContext = new OrderContext())
-            {
-                foreach (var customer in dbContext.Customers)
-                    Console.WriteLine($"{customer.CustomerId} {customer.Name} {customer.Email}");
-            }
+            context.Products.AddRange(new [] { p1, p2, p3, p4 });
+            context.SaveChanges();
+
         }
     }
 }

@@ -13,5 +13,11 @@ namespace EfCoreBasics
         public long ProductId { get; set; }
         public string Name { get; set; }
         public float UnitPrice { get; set; }
+
+        public Product(string name, float unitPrice)
+        {
+            Name = name;
+            UnitPrice = unitPrice;
+        }
     }
 }
