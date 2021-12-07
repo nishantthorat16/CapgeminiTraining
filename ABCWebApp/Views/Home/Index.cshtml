@@ -1,0 +1,43 @@
+﻿<h1>Home Screen</h1> 
+@if(User.IsInRole("Admin")) 
+{  
+   <div>
+    <a href="/addbook">Add New Book</a> | <a href="/adduser">Add New Book</a> 
+   </div>
+}
+
+<form action="/" method="post">
+    <input type="text" placeholder="Type the book name or author name" name="searchterm" />
+    <button type="submit">Search</button>
+</form>
+
+@if(ViewBag.Books != null)
+{
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Book Id</th>
+                <th>Title </th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var book in ViewBag.Books)
+                {
+                    <tr>
+                        <td>
+                            <img src="@book.BookCover" width="100"/>
+                        </td>
+                        <td>@book.Id</td>
+                        <td>
+                            <a href="~/bookdetails/@book.Id/@book.Author">
+                                @book.Title
+                            </a>
+                        </td>
+                        <td>@book.Author</td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+}
