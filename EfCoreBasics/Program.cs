@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace EfCoreBasics
 {
@@ -6,6 +7,9 @@ namespace EfCoreBasics
     {
         static void Main(string[] args)
         {
+            OrderContext context = new OrderContext();
+
+            /*
             Customer c1 = new Customer("Sree", "sreehariis@gmail.com");
             Customer c2 = new Customer("Bill", "bill@gmail.com");
             Customer c3 = new Customer("Mark", "mark@gmail.com");
@@ -15,7 +19,7 @@ namespace EfCoreBasics
             Product p3 = new Product("Sugar", 50);
             Product p4 = new Product("Washing Powder", 20);
 
-            OrderContext context = new OrderContext();
+           
             context.Customers.Add(c1);
             context.Customers.Add(c2);
             context.Customers.Add(c3);
@@ -23,6 +27,37 @@ namespace EfCoreBasics
             context.Products.AddRange(new [] { p1, p2, p3, p4 });
             context.SaveChanges();
 
+            //Update a exising item in the database
+            Product product   = context.Products.FirstOrDefault(d => d.ProductId == 1);
+
+            if (product != null)
+            {
+                product.UnitPrice = 150;
+
+                context.Products.Update(product);
+                context.SaveChanges();
+            }
+
+            //Delete existing item from database
+            Product productToDelete = context.Products.FirstOrDefault(d => d.Name.Equals("Washing Powder"));
+
+            if (productToDelete != null)
+            {
+                context.Products.Remove(productToDelete);
+                context.SaveChanges();
+            }*/
+
+            Customer customer = context.Customers.FirstOrDefault(d => d.Email == "sreehariis@gmail.com");
+            Product product   = context.Products.FirstOrDefault(d => d.Name == "Coffee");
+
+            Order order = new Order();
+            order.Product = product;
+            order.Customer = customer;
+            order.OrderDate = DateTime.Now;
+            order.OrderStatus = OrderStatus.PENDING;
+           
+            context.Orders.Add(order);
+            context.SaveChanges();
         }
     }
 }

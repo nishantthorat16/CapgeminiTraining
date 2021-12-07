@@ -20,6 +20,8 @@ namespace EfCoreBasics
             Email = email;
         }
 
+        public Customer() { }
+
         public override string ToString()
         {
             return $"{CustomerId} / {Name} / {Email}";

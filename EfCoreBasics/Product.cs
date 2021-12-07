@@ -19,5 +19,7 @@ namespace EfCoreBasics
             Name = name;
             UnitPrice = unitPrice;
         }
+
+        public Product() { }
     }
 }
