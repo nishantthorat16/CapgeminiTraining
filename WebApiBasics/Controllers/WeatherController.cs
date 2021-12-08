@@ -23,6 +23,7 @@ namespace WebApiBasics.Controllers
             weather.Add(new Weather("Bangalore", "Sunday", 26.1F));
         }
 
+        [HttpGet()]
         public IActionResult Get()
         {
             return Ok(weather);
