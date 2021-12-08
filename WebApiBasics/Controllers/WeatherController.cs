@@ -44,7 +44,46 @@ namespace WebApiBasics.Controllers
                 return BadRequest("Invalid City Name");
 
         }
+
+        [HttpPost]
+        public IActionResult Post(Weather weatherRequest)
+        {
+            weather.Add(weatherRequest);
+            return Ok(weather);
+        }
+
+        [HttpPut]
+        public IActionResult Put(Weather weatherRequest)
+        {
+            if (weather.Any(d => d.CityName == weatherRequest.CityName
+                             && d.WeekDay == weatherRequest.WeekDay))
+                weather.Remove(weather.First(d => d.CityName == weatherRequest.CityName
+                            && d.WeekDay == weatherRequest.WeekDay));
+
+            weather.Add(weatherRequest);
+            return Ok(weather);
+        }
+
+        [HttpDelete("{CityName}/{WeekDay}")]
+        public IActionResult Delete(string cityname,string weekday)
+        {
+
+            var w = weather.FirstOrDefault(d => d.CityName == cityname
+                            && d.WeekDay == weekday);
+
+            if (w != null)
+            {
+                weather.Remove(w);
+                return Ok(weather);
+            }
+            else
+                return NotFound($"No wether report found for {cityname}/{weekday}");
+
+           
+        }
     }
+
+
     public class Weather
     {
         public string CityName { get; set; }
@@ -57,5 +96,7 @@ namespace WebApiBasics.Controllers
             WeekDay = weekDay;
             Temprature = temprature;
         }
+
+        public Weather() { }
     }
 }
