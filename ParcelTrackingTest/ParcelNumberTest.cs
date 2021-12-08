@@ -53,6 +53,8 @@ namespace ParcelTrackingTest
         [InlineData("BLr1234546")]
         [InlineData("blr1234546")]
         [InlineData("blR1234546")]
+        [InlineData(" BLR1234546")]
+        [InlineData(" blr1234546")]
         public void CheckParcelNumber_ValidData_ReturnsTrue(string parcelNumber)
         {
             //Arrange

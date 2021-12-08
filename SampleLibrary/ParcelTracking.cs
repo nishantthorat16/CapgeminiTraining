@@ -7,7 +7,7 @@ namespace SampleLibrary
         public bool CheckParcelNumber
             (string parcelNumber)
         {
-            return parcelNumber
+            return parcelNumber.Trim()
                 .StartsWith("BLR"
                 ,StringComparison.OrdinalIgnoreCase);
         }

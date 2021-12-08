@@ -1,6 +1,3 @@
-using ABCLibrary;
-using ABCLibrary.Repositories;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -11,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ABCWebApp
+namespace WebApplication2
 {
     public class Startup
     {
@@ -19,14 +16,8 @@ namespace ABCWebApp
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<LibraryDbContext>();
-            services.AddScoped<IBookRepository,BookRepository>();   
-
             services.AddMvc();
             services.AddControllers();
-
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                    .AddCookie(d => d.LoginPath = "/login");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,10 +28,7 @@ namespace ABCWebApp
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseStaticFiles();
-            app.UseAuthentication();
             app.UseRouting();
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

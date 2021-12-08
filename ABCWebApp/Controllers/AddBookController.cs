@@ -1,4 +1,5 @@
 ﻿using ABCLibrary;
+using ABCLibrary.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,11 +9,11 @@ namespace ABCWebApp.Controllers
     [Authorize(Roles = "Admin")]
     public class AddBookController : Controller
     {
-        LibraryDbContext context;
+        IBookRepository bookRepository;
 
-        public AddBookController(LibraryDbContext context)
+        public AddBookController(IBookRepository bookRepository)
         {
-            this.context = context;
+            this.bookRepository = bookRepository;
         }
 
         [HttpGet]
@@ -26,11 +27,14 @@ namespace ABCWebApp.Controllers
         {
             if(ModelState.IsValid)
             {
+                var b = this.bookRepository.Add(book);
 
-                context.Books.Add(book);
-                context.SaveChanges();
-
-                Response.Redirect("/");
+                if(b == null)
+                {
+                    Response.Redirect("/page1");
+                }
+                else
+                    Response.Redirect("/page2");
             }
             return View(book);
         }
